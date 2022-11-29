@@ -85,3 +85,58 @@ footer>div {
 footer img{
     max-height: 6rem;
 }
+
+.container {
+    margin-top: 4rem;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container > img {
+    border-radius: 2rem;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 3px black;
+    font-weight: bold;
+}
+
+.centered h1 {
+    animation: center-text 16s infinite;
+    padding-bottom: 3rem;
+    font-weight: normal;
+}
+
+.secondary {
+    text-align: left;
+    margin-top: 4rem;
+}
+
+footer {
+    padding-top: 1rem;
+    border-top-width: 3px;
+    border-top-color: black;
+    border-top-style: double;
+}
+
+@keyframes center-text {
+    0%, 100% {
+        color: rgb(112, 1, 1);
+        text-shadow: 4px 4px 10px white;
+    }
+
+    25%, 75% {
+        color: white;
+        text-shadow: 4px 4px 3px black;
+    }
+
+    50% {
+        color:rgb(1, 10, 3);
+        text-shadow: 4px 4px 3px white;
+    }
+}
