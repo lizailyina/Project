@@ -8,11 +8,75 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 1em black, 0 0 1em black;
 }
 
 h2 {
+    text-align: right;
     font-size: 2rem;
+}
+
+a {
+    color: white;
+}
+
+h2 ~ p {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+section {
+    display: flex;
+}
+
+#footer-logo {
+    justify-content: end;
+    margin-right: 10rem;
+}
+
+#copyright {
+    margin-left: -6rem;
+}
+
+article {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+ 
+footer {
+    display: flex;
+    align-items: center;
+}
+
+
+main img {
+    display: flex;
+    transition: 1s;
+    opacity: 0.8;
+}
+
+main img:hover {
+    opacity: 1;
+}
+
+h2 + img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21rem;
+    width: 21rem;
+    opacity: 0.7;
+    transition: 0.8s;
+}
+
+h2 + img:hover {
+    opacity: 1;
 }
 
 header > img {
@@ -49,23 +113,6 @@ nav li {
 a:hover {
     color: rgb(221, 212, 134);
     text-shadow: 2rem;
-}
-
-a {
-    color: white;
-}
-
-section {
-    display: flex;
-}
-
-article {
-    flex: 1;
-}
- 
-footer {
-    display: flex;
-    align-items: center;
 }
 
 footer>div {
@@ -121,22 +168,55 @@ footer {
     padding-top: 1rem;
     border-top-width: 3px;
     border-top-color: black;
-    border-top-style: double;
+    border-top-style: dotted;
 }
 
 @keyframes center-text {
     0%, 100% {
         color: rgb(112, 1, 1);
-        text-shadow: 4px 4px 10px white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 1em white, 0 0 1em white;
     }
 
     25%, 75% {
         color: white;
-        text-shadow: 4px 4px 3px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 1em rgb(10, 68, 22), 0 0 1em rgb(10, 68, 22);
     }
 
     50% {
-        color:rgb(1, 10, 3);
-        text-shadow: 4px 4px 3px white;
+        color:rgb(14, 102, 31);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 1em rgb(112, 1, 1), 0 0 1em rgb(112, 1, 1);
     }
+}
+
+h2 ~ p {
+    transition: 1s;
+}
+
+h2 ~ p:hover {
+    color:rgb(54, 5, 5);
+    translate: 2px 2px;
+}
+
+h2 {
+    transition: 0.5s;
+}
+
+h2:hover {
+    translate: 0px -4px;
+}
+
+.secondary article {
+    padding: 2rem;
+    border-color: brown;
+    border-style: dotted;
+}
+
+.secondary > article {
+    transition: 1s;
+    border-radius: 2rem;
+}
+
+.secondary > article:hover {
+    box-shadow: 10px 10px 10px brown;
+    translate: 0.5rem 0.5rem;
 }
